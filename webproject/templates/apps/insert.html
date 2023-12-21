@@ -1,0 +1,21 @@
+{% extends 'apps/index.html' %}
+{%block body_block %}
+<html>
+<center>
+<body>
+<h2 style="color: red">INSERT EMPLOYEE INFORMATION</h2>
+<form method="POST" style="color: blue">
+	{{form.as_p}}
+	{%csrf_token%}
+	<a href="/result">
+	<button type="input" value="SUBMIT" style="color: red;">SUBMIT
+	</button></a>
+</form>
+</body>
+<footer>
+	<a href="/result">
+	<button>Employee Details</button></a>
+</footer>
+</center>
+{%endblock%}
+</html>

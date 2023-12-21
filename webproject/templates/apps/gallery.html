@@ -1,0 +1,81 @@
+	{%extends 'apps/index.html' %}
+	{% load static %}
+	{%block body_block %}
+	<html>
+	<style type="text/css">
+		*{
+			box-sizing:content-box;
+			background: azure;	
+		}
+		.gallery{
+			border: 3px solid #ccc;
+			border-radius: 5px;
+			float:left;
+		}
+		.gallery img{
+			text-align:right;
+			height: auto;
+			width: 430px;
+
+		}
+		.des{
+			padding: 5px;
+			text-align: center;
+		}
+		.container{
+			padding: 15px;
+			float:left;
+			width:30%
+		}
+		.gallery:hover{
+			transform: scale(1.1);
+			transition: .1s transform;
+			margin:auto;
+		}
+	</style>
+	<head>
+		
+		<h1 style="color: blue;text-align: center;">
+			<b>OUR OFFICE</b>
+		</h1>
+	</head>
+	<body>
+		<div class="container">
+			<div class="gallery">
+				<img src="{%static "/images/officeout.png" %}">
+				<div class="des" style="text-align: center; color:red;font-weight: bolder;" >OFFICE ENTRANCE</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="gallery">
+				<img src="{%static "/images/office home.jpg" %}">
+				<div class="des" style="text-align: center;color: red;font-weight: bolder;">Office Work Area</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="gallery">
+				<img src="{%static "/images/meeting.jpg" %}">
+				<div class="des" style="color: red;font-weight: bolder;">Meeting Area</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="gallery">
+				<img src="{%static "/images/dining room.jpg" %}">
+				<div class="des" style="color: red;font-weight: bolder;">Lunch Area</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="gallery">
+				<img src="{%static "/images/play area.jpg" %}">
+				<div class="des" style="color: red;font-weight: bolder;">Play Area</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="gallery">
+				<img src="{%static "/images/office parking.jpg" %}">
+				<div class="des" style="color: red;font-weight:bolder;">Parking Area</div>
+			</div>
+		</div>	
+	</body>
+	{%endblock%} 
+	</html>

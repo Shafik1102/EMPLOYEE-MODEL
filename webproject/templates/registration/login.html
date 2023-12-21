@@ -1,0 +1,29 @@
+<html>
+<style type="text/css">
+	*{
+		background-color:skyblue;	
+	}	
+	h1{
+		background-color:grey;
+		font-size:bolder;
+		font-size:75%
+	}
+	button{
+		background-color:red;
+	}
+	.center{
+		position: bottom;
+	}
+</style>
+<body>
+	<h1 style="text-align: center;font-size: xx-large;">WELCOME TO PAGE</h1>
+</body>
+<center>
+	<h3>LOGIN PAGE</h3>
+	<form method="POST">
+		{{form.as_p}}
+		{%csrf_token%}
+		<button type="submit">LOGIN</button>
+		<a href="/home">
+	</form>
+</center>

@@ -1,0 +1,40 @@
+<html>
+<style>
+	table{
+		border-color: yellow;}
+	th{
+		color: blue;
+		border-color: black;}
+	</style>
+<center>
+<body>
+	<h2 style="text-align: center;color: red">EMPLOYEE DETAILS</h2>
+<table border="2">
+<thead>
+	<th>ID NO</th>
+	<th>NAME</th>
+	<th>CITY</th>
+	<th>MOBILE</th>
+	<th>SALARY</th>
+	<th>EXPIRENCE</th>
+	<th>POSITION</th>
+</thead>
+{%for i in e%}
+<tr>
+	<td>{{i.no}}</td>
+	<td>{{i.name}}</td>
+	<td>{{i.city}}</td>
+	<td>{{i.mobile}}</td>
+	<td>{{i.salary}}</td>
+	<td>{{i.expirence}}</td>
+	<td>{{i.position}}</td>
+	<td><a href="/update/{{i.id}}">Update</a> | <a href="/delete/{{i.id}}">Delete</a></td>
+</tr>
+{%endfor%}
+</table>
+</body><br><br>
+<footer>
+	<a href="/home"  style="color: red;font-weight: bold;">BACK</a>
+	</footer>
+</center>
+</html>

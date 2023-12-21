@@ -1,0 +1,21 @@
+<html>
+<center>
+<body>
+<h2 style="color: blue">UPDATE INFORMATION</h2>
+<form method="POST" style="color: red">
+	{%csrf_token%}
+	 ID NO:<input type="text" name="no" value="{{e.no}}"><br>
+	NAME:<input type="text" name="name" value="{{e.name}}"><br>
+	CITY:<input type="text" name="city" value="{{e.city}}"><br>
+	MOBILE<input type="text" name="mobile" value="{{e.mobile}}"><br>
+	SALARY:<input type="text" name="salary" value="{{e.salary}}"><br>
+	EXPIRENCE:<input type="text" name="expirence" value="{{e.expirence}}"><br>
+	POSITION:<input type="text" name="position" value="{{e.position}}"><br>
+
+	<input type="submit" value="SUBMIT">
+</form>
+</body>
+</center>
+</html>
+
+	
